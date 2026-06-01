@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faction Affinity Monitor</title>
+    <link rel="stylesheet" href="aegis.css">
+</head>
+<body>
+
+    <h2>A F F I N I T Y</h2>
+
+    <div class="faction-container" data-faction="index">
+        <h3>The Index</h3>
+        <div class="progressContainer"><div class="progressBar"></div></div>
+        <div class="controls">
+            <button onclick="updateAffinity('index', 1)">+1</button>
+            <button onclick="updateAffinity('index', -1)">-1</button>
+            <button onclick="updateAffinity('index', 100)">Set Max</button>
+            <button onclick="updateAffinity('index', -100)">Reset</button>
+        </div>
+        <p class="statusText">Status: Stable</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
