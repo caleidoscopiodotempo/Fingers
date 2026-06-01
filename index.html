@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Faction Affinity Monitor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-
     <h2>A F F I N I T Y</h2>
 
     <div class="faction-container" data-faction="index">
@@ -18,9 +10,44 @@
             <button onclick="updateAffinity('index', 100)">Set Max</button>
             <button onclick="updateAffinity('index', -100)">Reset</button>
         </div>
-        <p class="statusText">Status: Stable</p>
+        <p class="statusText">Affinity Level: 0%</p>
+    </div>
+
+    <div class="faction-container" data-faction="ring">
+        <h3>The Ring</h3>
+        <div class="progressContainer"><div class="progressBar"></div></div>
+        <div class="controls">
+            <button onclick="updateAffinity('ring', 1)">+1</button>
+            <button onclick="updateAffinity('ring', -1)">-1</button>
+            <button onclick="updateAffinity('ring', 100)">Set Max</button>
+            <button onclick="updateAffinity('ring', -100)">Reset</button>
+        </div>
+        <p class="statusText">Affinity Level: 0%</p>
+    </div>
+
+    <div class="faction-container" data-faction="middle">
+        <h3>The Middle</h3>
+        <div class="progressContainer"><div class="progressBar"></div></div>
+        <div class="controls">
+            <button onclick="updateAffinity('middle', 1)">+1</button>
+            <button onclick="updateAffinity('middle', -1)">-1</button>
+            <button onclick="updateAffinity('middle', 100)">Set Max</button>
+            <button onclick="updateAffinity('middle', -100)">Reset</button>
+        </div>
+        <p class="statusText">Affinity Level: 0%</p>
+    </div>
+
+    <div class="faction-container" data-faction="thumb">
+        <h3>The Thumb</h3>
+        <div class="progressContainer"><div class="progressBar"></div></div>
+        <div class="controls">
+            <button onclick="updateAffinity('thumb', 1)">+1</button>
+            <button onclick="updateAffinity('thumb', -1)">-1</button>
+            <button onclick="updateAffinity('thumb', 100)">Set Max</button>
+            <button onclick="updateAffinity('thumb', -100)">Reset</button>
+        </div>
+        <p class="statusText">Affinity Level: 0%</p>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
